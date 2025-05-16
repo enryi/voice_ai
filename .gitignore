@@ -3,3 +3,4 @@ temp/*
 text/*
 python\__pycache__
 !.gitkeep
+ai_learning/audio/*
