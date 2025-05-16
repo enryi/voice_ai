@@ -1,4 +1,5 @@
 audio/*
 temp/*
+text/*
 python\__pycache__
 !.gitkeep
