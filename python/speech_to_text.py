@@ -12,7 +12,6 @@ def split_audio(file_path, chunk_length_ms=30000):
     """Split audio file into chunks"""
     audio = AudioSegment.from_wav(file_path)
     chunks = []
-    
     total_chunks = math.ceil(len(audio) / chunk_length_ms)
     logger.debug(f"Splitting audio into {total_chunks} chunks")
     
