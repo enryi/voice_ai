@@ -1,12 +1,10 @@
-# audio_register.py
 import sounddevice as sd
 import numpy as np
 import wave
 import threading
 import os
 
-def record_audio(filename='output.wav', sample_rate=44100, channels=2):
-    # Controlla se il file esiste già
+def record_audio(filename='audio/output.wav', sample_rate=44100, channels=2):
     if os.path.exists(filename):
         scelta = input(
             f"\nEsiste già una registrazione salvata come '{filename}'.\n"
@@ -15,7 +13,6 @@ def record_audio(filename='output.wav', sample_rate=44100, channels=2):
         if scelta.lower() != 's':
             print(f"Utilizzo la traccia già registrata: {filename}")
             return filename
-
     audio_chunks = []
     recording = True
 

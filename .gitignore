@@ -1,2 +1,4 @@
-*.wav
+audio/*
+temp/*
+python\__pycache__
 !.gitkeep
